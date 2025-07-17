@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti: Vedic Space AI Assistant</title>
+    <meta name="description" content="Your AI assistant for interactions related to Vedic Space, cosmology, and ancient Indian sciences.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons for basic UI elements -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Header (from your template) -->
+    <header class="header">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <a href="/" class="logo">
+                    <div class="logo-icon">
+                        <div style="width: 0.75rem; height: 0.75rem; border: 1px solid rgba(255,255,255,0.6); border-radius: 0.125rem;"></div>
+                    </div>
+                    <div>
+                        <div class="logo-text font-serif">Vedic Space</div>
+                        <div class="logo-subtitle font-sans">AI Assistant</div>
+                    </div>
+                </a>
+                
+                <nav class="nav-links flex items-center space-x-8">
+                    <a href="/" class="nav-link font-sans">Home</a>
+                    <a href="https://vedicspace.in" class="nav-link font-sans">Main Site</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Chat Interface Section -->
+    <section class="chat-section">
+        <div class="chat-container">
+            <header class="chat-header">
+                <div class="chat-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot"><path d="M12 8V4H8"/><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10"/><path d="M15 22v-4a2 2 0 0 1 2-2h4"/></svg>
+                    Shruti: Vedic Space Bot
+                </div>
+            </header>
+            <main class="chat-messages" id="chat-messages">
+                <div class="welcome-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot"><path d="M12 8V4H8"/><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10"/><path d="M15 22v-4a2 2 0 0 1 2-2h4"/></svg>
+                    <p>Welcome! Ask me anything about Vedic Space.</p>
+                    <p class="example-query">e.g., "What is the concept of Brahmanda in Vedic cosmology?"</p>
+                </div>
+            </main>
+            <footer class="chat-footer">
+                <form id="chat-form" class="chat-form">
+                    <input type="text" id="user-input" placeholder="Ask Shruti about Vedic Space..." aria-label="Chat input">
+                    <button type="submit" id="send-button">Send</button>
+                </form>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Footer (from your template) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="flex items-center space-x-4" style="margin-bottom: 1rem;">
+                        <div style="width: 1.5rem; height: 1.5rem; background-color: var(--primary-purple); border-radius: 0.125rem; display: flex; align-items: center; justify-content: center;">
+                            <div style="width: 0.75rem; height: 0.75rem; border: 1px solid rgba(255,255,255,0.6); border-radius: 0.125rem;"></div>
+                        </div>
+                        <span class="footer-title font-serif">Vedic Space</span>
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                        A sacred digital sanctuary for chanting, breath, and quiet reflection. 
+                        Rooted in the Vedic tradition.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title font-serif">Explore</h4>
+                    <a href="#" class="footer-link font-sans">Categories</a>
+                    <a href="#" class="footer-link font-sans">Archive</a>
+                    <a href="#" class="footer-link font-sans">Latest Posts</a>
+                    <a href="#" class="footer-link font-sans">Newsletter</a>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title font-serif">Topics</h4>
+                    <a href="#" class="footer-link font-sans">Mantra</a>
+                    <a href="#" class="footer-link font-sans">Breath Work</a>
+                    <a href="#" class="footer-link font-sans">Daily Practice</a>
+                    <a href="#" class="footer-link font-sans">Reflection</a>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title font-serif">Connect</h4>
+                    <a href="https://vedicspace.in" class="footer-link font-sans">Main Site</a>
+                    <a href="https://vishnu.vedicspace.in" class="footer-link font-sans">VSS Sadhana</a>
+                    <a href="https://arts.vedicspace.in" class="footer-link font-sans">Sacred Arts</a>
+                    <a href="#" class="footer-link font-sans">Community</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="font-sans">© 2024 Vedic Space. All rights reserved. A sacred space for authentic practice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
